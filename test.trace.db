@@ -1,0 +1,6 @@
+2026-04-09 10:41:40.560412-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REGISTER" not found (this database is empty); SQL statement:
+INSERT INTO REGISTER VALUES(?, ?, ?) [42104-240]
+2026-04-09 11:02:38.514652-03:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "REGISTER" not found (this database is empty); SQL statement:
+INSERT INTO REGISTER (TASK_DESCRIPTION, START_DATE) VALUES(?, ?) [42104-240]
