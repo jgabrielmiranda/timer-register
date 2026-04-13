@@ -1,6 +1,7 @@
 package org.mycompanyname.timerregister
 
 import org.mycompanyname.timerregister.model.entities.Register
+import org.mycompanyname.timerregister.repository.DatabaseConnection
 import org.mycompanyname.timerregister.repository.RegisterRepository
 import java.time.LocalDateTime
 
@@ -8,7 +9,7 @@ class ManageActions {
     companion object {
         fun controlAction(action: String) {
 
-            val registerRepository = RegisterRepository()
+            val registerRepository = RegisterRepository(DatabaseConnection().getConnection())
             val command = action.take(action.indexOf('='))
             val taskDescription = action.substring( action.indexOf('=') + 1, action.length)
 
