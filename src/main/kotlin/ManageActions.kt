@@ -9,7 +9,7 @@ class ManageActions {
     companion object {
         fun controlAction(action: String) {
 
-            val registerRepository = RegisterRepository(DatabaseConnection().getConnection())
+            val registerRepository = RegisterRepository(DatabaseConnection.getConnection())
             val command = action.take(action.indexOf('='))
             val taskDescription = action.substring( action.indexOf('=') + 1, action.length)
 

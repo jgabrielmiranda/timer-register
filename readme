@@ -1,0 +1,8 @@
+To run the Project
+
+1. You will need the H2 Database installed (https://www.h2database.com/html/download.html)
+2. Create a config.properties file in the filder "resources" with the following parameters
+
+db.url=jdbc:h2:~/test;DB_CLOSE_DELAY=-1
+db.user=sa
+db.password=
